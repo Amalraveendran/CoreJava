@@ -1,1 +1,1 @@
-# Java_Amal
+# Core_Java
