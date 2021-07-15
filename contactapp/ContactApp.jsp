@@ -6,7 +6,7 @@
 <body>
     <%= "Hello World!" %>
 
-    <form  method="POST" action="GetContact.jsp">
+    <form  action="GetContact.jsp">
 
     	<input type="text" name="name">
 

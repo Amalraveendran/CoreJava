@@ -4,26 +4,22 @@
 <title>Hello World - JSP tutorial</title>
 </head>
 <body>
-    <% ArrayList<String> name=new ArrayList<String>();
-    	ArrayList<String> number=new ArrayList<String>();
-    	int i;
+	<%@ page import="java.util.*" %>
+    <% String name;
+    	String number;
+    
     
     	
-    		name.add(request.getParameter("name"));
-    	number.add(request.getParameter("number"));
+    	name=request.getParameter("name");
+    	number=request.getParameter("number");
 
     	
     
     %>
 
 <h2>
-	<%
-	for(String s:name )
-	{ %>Name = <%= name[s]%>
-		Number= <%= number[i]
-	}
-
-	 %>
+	Name = <%= name%>
+		Number= <%= number %>
 	
 	
 </h2>
